@@ -1,0 +1,9 @@
+body {
+  background-image: url(imgs/background_final.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

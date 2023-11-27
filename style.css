@@ -1,9 +1,58 @@
+main,
+footer {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*** baggrundsbillede ***/
 body {
-  background-image: url(imgs/background_final.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+/*** menu ***/
+.logo img {
+  max-width: 60px;
+  display: flex;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+  padding-right: 30px;
+}
+@font-face {
+  font-family: minFont;
+  src: url("Work_Sans/WorkSans-VariableFont_wght.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  font-family: minFont;
+  text-decoration: none;
+  color: #f0d188;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+a img {
+  width: 100px;
+  height: auto;
+  margin: 20px;
 }

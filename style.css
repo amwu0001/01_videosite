@@ -1,10 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 main,
 footer {
   max-width: 1200px;
   margin: 0px auto;
 }
-img {
-  max-width: 100%;
+img,
+video {
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -55,4 +61,156 @@ a img {
   width: 100px;
   height: auto;
   margin: 20px;
+}
+/*** overskrifter ***/
+h1 {
+  font-family: minFont;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #2c282f;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+/*** Video ***/
+iframe {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+video {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/*** Forside credits ***/
+#grid_forside {
+  display: grid;
+  grid-template-rows: 10fr 1fr 1fr 1fr;
+  margin-top: 0.5rem;
+}
+.forside_1 {
+  margin-top: 2rem;
+  grid-row: 2;
+  text-align: center;
+}
+.forside_2 {
+  margin-top: 1rem;
+  grid-row: 3;
+  text-align: center;
+}
+.forside_3 {
+  grid-row: 4;
+  text-align: center;
+}
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  color: #2c282f;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+@media (min-width: 800px) {
+  /*** overskrifter ***/
+  h1 {
+    font-family: minFont;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #2c282f;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+  /*** menu ***/
+  a {
+    font-size: 1rem;
+    font-weight: 1000;
+  }
+  /*** fotos grid ***/
+  #photos_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    row-gap: 1rem;
+    text-align: center;
+  }
+  #photos_grid img {
+    object-fit: cover;
+    align-self: stretch;
+    margin: auto;
+    max-width: 600px;
+    max-height: 800px;
+  }
+  .f_1 {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+  }
+  .f_2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .f_3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .f_5 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  #photos_hoj {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2rem;
+  }
+  #photos_hoj img {
+    max-height: 600px;
+  }
+  .f_4 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  /*** Forside credits ***/
+  #grid_forside {
+    display: grid;
+    grid-template-rows: 10fr 1fr 1fr 1fr;
+    margin-top: 0.5rem;
+  }
+  .forside_1 {
+    margin-top: 4rem;
+    grid-row: 2;
+    text-align: center;
+  }
+  .forside_2 {
+    margin-top: 2rem;
+    grid-row: 3;
+    text-align: center;
+  }
+  .forside_3 {
+    grid-row: 4;
+    text-align: center;
+  }
+  h2 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    color: #2c282f;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 }
